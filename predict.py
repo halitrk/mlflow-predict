@@ -7,7 +7,7 @@ loaded_model = mlflow.pyfunc.load_model(logged_model)
 
 # Predict on a Pandas DataFrame.
 import pandas as pd
-
+import numpy as np
 data=pd.read_csv('pred_data.csv')
 predictions =loaded_model.predict(pd.DataFrame(data))
 print(predictions)
