@@ -1,0 +1,12 @@
+name: docker-example
+
+docker_env:
+  image:  mlflow-docker-example
+
+entry_points:
+  main:
+    parameters:
+      limit: int
+      
+    #command: "python train.py --alpha {alpha} --l1-ratio {l1_ratio}"
+    command: "python predict.py --limit {limit}"

@@ -1,0 +1,5 @@
+.mlflow/
+logs.log
+*.log
+mlruns/
+venv/
